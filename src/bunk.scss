@@ -1,4 +1,7 @@
 $dark-red: #591E23;
+$tan: #F2D8A7;
+$pink: #D94E67;
+$brown: #73503C;
 
 @mixin links($color, $hover-color)
 {
@@ -15,29 +18,25 @@ $dark-red: #591E23;
 	}
 }
 
-#wrapper
+
+
+body
 {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    background-color: #F2D8A7;
-    /* font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif; */
     font-family: Tahoma, Geneva, sans-serif;
-}
-
-body
-{
 	background-color: $dark-red;	
 }
 
 footer
 {
 	background-color: $dark-red;
-	color: white;
+	color: #fff;
 	text-align: left;
 	padding-top: 10px;
 	
-	@include links(#fff, #D94E67);
+	@include links($pink, #fff);
 
 }
 
@@ -56,7 +55,7 @@ footer
 
 header
 {
-	background-color: #F2D8A7;
+	background-color: $tan;
 	padding-left: 15px;
 	padding-right: 15px;
 	padding-bottom: 5px;
@@ -66,9 +65,8 @@ header
 
 #logoImg
 {
-	position: relative;
-	padding: 5px;
-	top: 8px;
+	max-width: 162px;
+	max-height: 163px;
 }
 
 h1
@@ -76,6 +74,7 @@ h1
 	text-align: center;
 	padding: 5px;
 	padding-bottom: 15px;
+	font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
 }
 
 h3
@@ -83,11 +82,13 @@ h3
 	text-align: center;
 	padding: 5px;
 	padding-bottom: 10px;
+	font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
 }
 
 h4
 {
 	padding-top: 5px;
+	font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
 }
 
 p
@@ -103,13 +104,13 @@ main div
 hr
 
 {
-	border-color: #D94E67;
+	border-color: $pink;
 	width: 90%;
 }
 
 .vr
 {
-    border-left: thin solid #D94E67;
+    border-left: thin solid $pink;
 }
 
 li
@@ -128,11 +129,11 @@ li
 	padding-bottom: 5px;
 	width: 100%;	
 	text-align: right;
-	color: white;
+	color: #fff;
 }
 
 
-@include links(#D94E67, #F2D8A7);
+@include links($pink, $tan);
 
 
 @mixin rounded($radius) {
@@ -163,23 +164,23 @@ main
 
 .navbar-custom
 {
-    color: white;
+    color: #fff;
     background-color: $dark-red;
 }
 
 .navbar-custom .navbar-nav > li > a {
-    color: #D94E67;
+    color: $pink;
 }
 .navbar-custom .navbar-nav > li > a:hover,
 .navbar-custom .navbar-nav > li > a:focus
 {
-    color: $dark-red;
-    background: #D94E67;
+    color: #fff;
+    background: $pink;
 }
 .navbar-custom .navbar-nav > .active > a, 
 .navbar-custom .navbar-nav > .active > a:hover, 
 .navbar-custom .navbar-nav > .active > a:focus {
-    color: white;
+    color: #fff;
     
 }
 
@@ -195,13 +196,18 @@ main
 
 #myCarousel
 {
-	background: #73503C;
+	background: $brown;
 
 }
 
 #bunkhouseImg
 {
 	padding-top: 25px;
+}
+
+#facebookLogo
+{
+	margin-top: 5px;
 }
 
 #bunkhouseAbout
@@ -212,14 +218,14 @@ main
 	padding-left: 15px;
 	padding-right: 15px;
 	padding-bottom: 10px;
-	color: white;
+	color: #fff;
 	
 	
 }
 
 #homeNashville
 {
-	background-color: #F2D8A7;
+	background-color: $tan;
 	margin-top:0;
 	padding-top: 3px;
 	padding-left: 15px;
@@ -240,7 +246,7 @@ main
 	padding-left: 15px;
 	padding-right: 15px;
 	padding-bottom: 10px;
-	color: white;	
+	color: #fff;	
 }
 
 .center-p
@@ -250,7 +256,7 @@ main
 
 #directions
 {
-	background-color: #F2D8A7;
+	background-color: $tan;
 	margin-top:0;
 	padding-top: 15px;
 	padding-left: 15px;
@@ -264,10 +270,6 @@ main
      height: 100%;
 }
 
-.fold
-{
-	height:100%;
-}
 
 
 
