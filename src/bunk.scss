@@ -1,4 +1,19 @@
-/*Student Collaboration*/
+$dark-red: #591E23;
+
+@mixin links($color, $hover-color)
+{
+	a, a:link
+	{
+		color: $color;
+		text-decoration: none;
+	}
+
+	a:hover
+	{
+		color: $hover-color;
+		text-decoration: underline;
+	}
+}
 
 #wrapper
 {
@@ -12,28 +27,18 @@
 
 body
 {
-	background-color: #F2D8A7;	
+	background-color: $dark-red;	
 }
 
 footer
 {
-	background-color: #591E23;
+	background-color: $dark-red;
 	color: white;
 	text-align: left;
 	padding-top: 10px;
-}
+	
+	@include links(#fff, #D94E67);
 
-footer a,
-a:link
-{
-	color: white;
-    text-decoration: none;
-}
-
-footer a:hover
-{
-	color: #D94E67;
-    text-decoration: underline;
 }
 
 .footer
@@ -126,44 +131,25 @@ li
 	color: white;
 }
 
-a
-{
-target-name:new;
-target-new:tab;
-text-decoration: none;
-}
 
-a,
-a:link
-{
-	color: #D94E67;
-    text-decoration: none;
-}
+@include links(#D94E67, #F2D8A7);
 
-a:active,
-a:hover
-{
-	color: #F2D8A7;
-    text-decoration: underline;
-}
 
-a:visited
-{
-	 text-decoration: none;
+@mixin rounded($radius) {
+	-webkit-border-radius:$radius;
+    -moz-border-radius:$radius;
+    border-radius:$radius;
 }
-
 
 .rounded
 {
-    -webkit-border-radius:5px;
-    -moz-border-radius:5px;
-    border-radius:5px;
+    @include rounded(5px);
 }
 
  
 main
 {
-	background-color: #591E23;
+	background-color: $dark-red;
 	padding-top: 5px;
 }
  
@@ -178,7 +164,7 @@ main
 .navbar-custom
 {
     color: white;
-    background-color: #591E23;
+    background-color: $dark-red;
 }
 
 .navbar-custom .navbar-nav > li > a {
@@ -187,7 +173,7 @@ main
 .navbar-custom .navbar-nav > li > a:hover,
 .navbar-custom .navbar-nav > li > a:focus
 {
-    color: #591E23;
+    color: $dark-red;
     background: #D94E67;
 }
 .navbar-custom .navbar-nav > .active > a, 
@@ -197,12 +183,6 @@ main
     
 }
 
-/* 
-nav li
-{
-	list-style-type: none;
-}
- */
 
 .inner-item
 {
@@ -221,12 +201,12 @@ nav li
 
 #bunkhouseImg
 {
-
+	padding-top: 25px;
 }
 
 #bunkhouseAbout
 {
-	background-color: #591E23;
+	background-color: $dark-red;
 	margin-top:0;
 	padding-top: 3px;
 	padding-left: 15px;
@@ -245,13 +225,16 @@ nav li
 	padding-left: 15px;
 	padding-right: 15px;
 	padding-bottom: 10px;
+	
+	a:hover { color: $dark-red;}
+	
 }
 
-#homeNashville a:hover { color: #591E23;}
+
 
 #homeSecTwo
 {
-	background-color: #591E23;
+	background-color: $dark-red;
 	margin-top:0;
 	padding-top: 3px;
 	padding-left: 15px;
