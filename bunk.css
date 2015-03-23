@@ -1,0 +1,291 @@
+/*Student Collaboration*/
+
+#wrapper
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    background-color: #F2D8A7;
+    /* font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif; */
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+body
+{
+	background-color: #F2D8A7;	
+}
+
+footer
+{
+	background-color: #591E23;
+	color: white;
+	text-align: left;
+	padding-top: 10px;
+}
+
+footer a,
+a:link
+{
+	color: white;
+    text-decoration: none;
+}
+
+footer a:hover
+{
+	color: #D94E67;
+    text-decoration: underline;
+}
+
+.footer
+{
+    padding: 10px;
+    vertical-align: middle;
+}
+
+.center
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+header
+{
+	background-color: #F2D8A7;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 5px;
+	padding-top: 50px;
+}
+
+
+#logoImg
+{
+	position: relative;
+	padding: 5px;
+	top: 8px;
+}
+
+h1
+{
+	text-align: center;
+	padding: 5px;
+	padding-bottom: 15px;
+}
+
+h3
+{
+	text-align: center;
+	padding: 5px;
+	padding-bottom: 10px;
+}
+
+h4
+{
+	padding-top: 5px;
+}
+
+p
+{
+	font-size: 16px;
+}
+
+main div
+{
+	padding: 15px;
+}
+
+hr
+
+{
+	border-color: #D94E67;
+	width: 90%;
+}
+
+.vr
+{
+    border-left: thin solid #D94E67;
+}
+
+li
+{
+	list-style-type: none;
+}
+
+
+.transparent
+{
+	position: absolute;
+	background-color:rgba(0,0,0,0.5);
+	bottom: 0;
+	margin: 0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 100%;	
+	text-align: right;
+	color: white;
+}
+
+a
+{
+target-name:new;
+target-new:tab;
+text-decoration: none;
+}
+
+a,
+a:link
+{
+	color: #D94E67;
+    text-decoration: none;
+}
+
+a:active,
+a:hover
+{
+	color: #F2D8A7;
+    text-decoration: underline;
+}
+
+a:visited
+{
+	 text-decoration: none;
+}
+
+
+.rounded
+{
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+}
+
+ 
+main
+{
+	background-color: #591E23;
+	padding-top: 5px;
+}
+ 
+
+#homeTitle
+{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar-custom
+{
+    color: white;
+    background-color: #591E23;
+}
+
+.navbar-custom .navbar-nav > li > a {
+    color: #D94E67;
+}
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus
+{
+    color: #591E23;
+    background: #D94E67;
+}
+.navbar-custom .navbar-nav > .active > a, 
+.navbar-custom .navbar-nav > .active > a:hover, 
+.navbar-custom .navbar-nav > .active > a:focus {
+    color: white;
+    
+}
+
+/* 
+nav li
+{
+	list-style-type: none;
+}
+ */
+
+.inner-item
+{
+	text-align: center;
+    img 
+    {
+    	margin: 0 auto;
+    }
+}
+
+#myCarousel
+{
+	background: #73503C;
+
+}
+
+#bunkhouseImg
+{
+
+}
+
+#bunkhouseAbout
+{
+	background-color: #591E23;
+	margin-top:0;
+	padding-top: 3px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 10px;
+	color: white;
+	
+	
+}
+
+#homeNashville
+{
+	background-color: #F2D8A7;
+	margin-top:0;
+	padding-top: 3px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 10px;
+}
+
+#homeNashville a:hover { color: #591E23;}
+
+#homeSecTwo
+{
+	background-color: #591E23;
+	margin-top:0;
+	padding-top: 3px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 10px;
+	color: white;	
+}
+
+.center-p
+{
+	text-align: center;
+}
+
+#directions
+{
+	background-color: #F2D8A7;
+	margin-top:0;
+	padding-top: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 10px;
+}
+#map-canvas 
+{
+     width: 100%;
+     min-height: 450px;
+     height: 100%;
+}
+
+.fold
+{
+	height:100%;
+}
+
+
+
+
