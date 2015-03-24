@@ -155,11 +155,25 @@ main
 }
  
 
-#homeTitle
+#titleImg
 {
 	display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    max-height: 100px;
+	max-width:400px;
+}
+
+#title
+{
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	max-height: 100px;
+	max-width:400px;
+	
 }
 
 .navbar-custom
@@ -167,8 +181,8 @@ main
     color: #fff;
     background-color: $dark-red;
 }
-
-.navbar-custom .navbar-nav > li > a {
+.navbar-custom .navbar-nav > li > a
+{
     color: $pink;
 }
 .navbar-custom .navbar-nav > li > a:hover,
@@ -179,9 +193,17 @@ main
 }
 .navbar-custom .navbar-nav > .active > a, 
 .navbar-custom .navbar-nav > .active > a:hover, 
-.navbar-custom .navbar-nav > .active > a:focus {
-    color: #fff;
-    
+.navbar-custom .navbar-nav > .active > a:focus
+{
+    color: #fff;   
+}
+.navbar-brand
+{
+	padding: 0;
+}
+.navbar-right
+{
+	padding-top: 5px;
 }
 
 

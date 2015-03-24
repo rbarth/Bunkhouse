@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <head>
 	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Janette's Bunkhouse: Vacation Rental</title>
 	<link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
 
 	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<!-- <link href="assets/css/bootstrap-responsive.css" rel="stylesheet"> -->
 
 	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -24,13 +26,11 @@
 	<nav class="navbar navbar-custom navbar-fixed-top">
 		<div class="container">
 			<div class="navbar-header ">
-				<a class="navbar-brand" style = "padding:0;" href="bunkhouse.html"><img src="assets/images/bunkLogo.png" alt="Brand" width = "50px" height = "50px"></a>
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>			    
+					<span class="sr-only">Toggle navigation</span>			
+ 					<span class="glyphicon glyphicon-menu-down"></span>
+				</button>
+				<a class="navbar-brand" href="bunkhouse.html"><img src="assets/images/bunkLogo.png" alt="Brand" width = "50px" height = "50px"></a>  
 			</div><!--End nav toggle-->
 	
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -40,7 +40,7 @@
 					<li><a href="#directions">Directions</a></li>
 					<li><a href="https://www.facebook.com/ShirleysChuckwagonCafe" target="_blank">Shirley's Chuckwagon Café</a></li>
 				</ul>
-				<ul class = "navbar-right" style = "padding-top:5px;">
+				<ul class = "navbar-right">
 					<li><a href="https://www.facebook.com/JanettesBunkhouse/timeline" target="_blank"> <img id = "facebookLogo" src="assets/images/facebook-logo.png" width = "30" height = "30"</img></a></li>
 				</ul>
 			</div><!--End nav collapse-->
@@ -50,7 +50,9 @@
 	<header>
 		<div class = "my-row">
 			<div class = "container">
-				<h1><img id="homeTitle" src="assets/images/homeTitle2.png" width = "400" height = "90" alt="Janette's Bunkhouse: Vacation Rental"></h1>
+				<div id = "title">
+					<img id="titleImg" src="assets/images/homeTitle2.png" width = "100%" height = "100%" alt="Janette's Bunkhouse: Vacation Rental">
+				</div>
 			</div>
 		</div>	
 	</header>
@@ -236,7 +238,7 @@
 			
 				<div class = "my-row col-md-4">
 					<a href="https://www.facebook.com/ShirleysChuckwagonCafe" target="_blank">
-						<img id ="cafeImg" src = "assets/images/cafeSign.jpg" height = "70%" width = "70%" </img>
+						<img id ="cafeImg" src = "assets/images/cafeSign2.jpg" height = "70%" width = "70%" </img>
 					</a>
 					<figcaption>Come on down to the Café for some homestyle goodness.</figcaption>
 				</div>
@@ -248,21 +250,24 @@
 			<div class = "container">
 				<div class = "col-md-4 col-md-offset-1">	
 					<h3>Availabilities</h3>
-					<p>Please contact Janette to check for availabilities.<p>
-					<p>Cellphone:</p>
-					<p>(616)890-9908<p>
+					<p>Please contact Janette for availabilities.<p>
+					<hr>
+					<p><strong>Cellphone</strong> (616)890-9908<p>
 				
 					<br>
 				
-					<p>Shirley's Cafe:</p>
-					<p>(517)852-2201<p>
+					<p><strong>Shirley's Cafe</strong> (517)852-2201<p>
+					
+					<br>
+					<p><strong>Email</strong> jaykim75@yahoo.com</p>
 				</div><!--Ends availabilities-->	
 
 				<div id = "rates" class = "col-md-4 col-md-offset-2">
 					<h3>Rates</h3>
-					<p>(Prices based on double occupancy)<p>
+					<p>Prices based on double occupancy<p>
+					<hr>
 					<p><strong>Weekday Rates </strong>(Sunday-Thursday)....65 per night<p>
-					<p><strong>Weekend Rates </strong>(Friday and Saturday)....80 per night<p>
+					<p><strong>Weekend Rates </strong>(Friday-Saturday)....80 per night<p>
 				
 					<br>
 			
@@ -291,7 +296,7 @@
 				</div><!--Ends directions/form-->
 		
 				<div class = "col-md-6 col-md-offset-1">
-					<iframe id="map-canvas" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2936.707747452443!2d-85.0934308!3d42.603943799999996!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88180ff63594b445%3A0x898118533ccc5d80!2s107+Maple+St%2C+Nashville%2C+MI+49073!5e0!3m2!1sen!2sus!4v1426533398385" width="600" height="450" frameborder="0" style="border:0"></iframe>
+					<iframe id="map-canvas" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2936.707747452443!2d-85.0934308!3d42.603943799999996!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88180ff63594b445%3A0x898118533ccc5d80!2s107+Maple+St%2C+Nashville%2C+MI+49073!5e0!3m2!1sen!2sus!4v1426533398385" width="600" height="450" frameborder="0" ></iframe>
 				</div><!--Ends map-->
 			</div><!--Ends container-->	
 		</div><!--Ends Directions (row 5)-->
@@ -300,24 +305,28 @@
 	<footer>
 		<div class = "my-row container footer">
 			<div class = "col-md-2">
-				<img id = "logoImg"src="assets/images/bunkLogo.png" alt="Brand" height="100%" width="100%">
+				<img id = "logoImg" href="bunkhouse.html" src="assets/images/bunkLogo.png"  alt="Brand" height="100%" width="100%">
 			</div> 	
 					
 			<div class = "col-md-3">	
 				<ul>
 					<li><h4>Location</h4></li>
 					<li>107 Maple St Nashville MI</li>
+					<br>
+					<li>Facebook</li>
+					<li><a href="https://www.facebook.com/JanettesBunkhouse/timeline" target="_blank"> <img id = "facebookLogo" src="assets/images/facebook-logo.png" width = "30" height = "30"</img></a></li>
 				</ul>		
 			</div>
 			
 			<div class = "col-md-2">
 				<ul>
 					<li><h4>Contact</h4></li>
-					<li>Janette</li>
+					<li>Cellphone</li>
 					<li>(616)890-9908</li>
 					<br>
-					<li>Facebook</li>
-					<li><a href="https://www.facebook.com/JanettesBunkhouse/timeline" target="_blank"> <img id = "facebookLogo" src="assets/images/facebook-logo.png" width = "30" height = "30"</img></a></li>
+					<li>Email</li>
+					<li>jaykim75@yahoo.com</li>
+					
 				</ul>	
 			</div>
 
