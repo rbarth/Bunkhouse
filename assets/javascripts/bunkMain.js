@@ -12,6 +12,5 @@ $(document).ready(function(){
 		});
 		$("#map-canvas").attr("src", baseURL + params);
 	});
-					
-    
+	
 });
